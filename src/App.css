@@ -1,0 +1,84 @@
+.title {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1280px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.chart li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.chart li .bar {
+  flex-grow: 1;
+  background: #eee;
+  max-width: 85%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .chart li .bar {
+    max-width: 60%;
+  }
+}
+
+.chart li .progress {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  background: rgb(114, 194, 221);
+  position: relative;
+}
+
+.chart li .value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: block;
+  background: rgb(114, 194, 221);
+
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: rgb(66, 177, 214);
+}
